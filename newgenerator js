@@ -36,7 +36,6 @@ const generatePassword = (password = "") => {
     passBox.innerText = truncateString(password, totalChar.value)
 } 
 
-generatePassword();
 
 document.getElementById("btn").addEventListener(
     "click",
@@ -62,27 +61,11 @@ function openPopup(){
 popup.classList.add("open-popup");
 }
 var enin;
-function EnOrDis(sm){
-    var selected=sm.options[sm.selectedIndex].value;
-    var txtOther=document.getElementById("txtOther");
-    txtOther.disabled= selected=="other"?false:true;
-    if(!txtOther.disabled){
-        txtOther.focus();
-    }
-    
-    enin=(selected =="other")?document.getElementById('txtOther').value:selected;    
-}
+
 function getcon(){
     var paswd=document.getElementById("pass-box").textContent;
-   if(enin==null){
-    document.getElementById('save2').addEventListener('click',function(){
-        let othervalue=document.getElementById("txtOther").value;
-        console.log(othervalue);
-        console.log(paswd);
-    })
-   }
-   else{
+   enin=document.getElementById('txtOther').value;
     console.log(paswd);
     console.log(enin);
-   }
+           
 }
