@@ -12,7 +12,7 @@
 <body>
     <div class="main">
         <div class="box">
-            <span id="pass-box">Testing</span>
+            <span id="pass-box"></span>
             <div class="row">
                 <div class="left">
                     Password Length
@@ -70,14 +70,8 @@
                 </button>
                 <div class="popup" id="popup">
                     <p> Would you like to save it for</p>
-                   <select id="sm" onclick="EnOrDis(this)">
-                <option value="Google" >Google</option>
-                <option value="FaceBook">FaceBook</option>
-                <option value="Instagram">Instagram</option>
-                <option value="other">other</option>
-                </select>
-                <br/>
-                <input type="text" id="txtOther" disabled="disabled">
+                   
+                <input type="text" id="txtOther" >
                 <button id="save2" onclick="getcon()">Submit</button>
                 </div>
             </div>
