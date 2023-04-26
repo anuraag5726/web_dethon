@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback.css">
+    <style>
+        body {
+          background-image: url('https://images.blocksurvey.io/cdn-cgi/imagedelivery/G6cPOuGZ4Z_bEV13gBxixw/template-category/event-experience.svg/l');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+  </head>
+  <body style="background-color:black;">
+    <button class="btn" ><a href="C:\Users\Sankhar\Desktop\bootcamp proj\main.html"> Home</a></button> 
+    <div class="container">
+      <h1>Feedback Page</h1>
+      <form id="feedback-form" action="submit-feedback.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Submit" style="margin-left: 145px;">
+      </form>
+    </div>
+    <script src="feedback.js"></script>
+  </body>
+</html>

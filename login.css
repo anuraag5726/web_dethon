@@ -1,0 +1,106 @@
+.logo {
+    float: left;
+    /* animation: sun 5s linear infinite; */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  
+    background-image: url("https://th.bing.com/th/id/OIP.bY5Om0-SNrihYbcpWPbXkwHaE8?pid=ImgDet&rs=1");
+      /*("https://wallpaperaccess.com/full/5705179.jpg");*/
+    background-size: cover;
+  }
+  body h1 span {
+    color: darkgreen;
+    animation: animate 5s linear infinite;
+  }
+  body h1 {
+    color: white;
+  }
+  
+  .box {
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .box h1 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .box .inputbox {
+    position: relative;
+  }
+  
+  .box .inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .box .inputbox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  .box .inputbox input:focus ~ label,
+  .box .inputbox input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: blue;
+    font-size: 12px;
+  }
+  
+  .box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: blue; /*#03a9f4;*/
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  @keyframes animate {
+    0% {
+      color: lightblue;
+    }
+    100% {
+      color: #00a550;
+      text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 40px blue, 0 0 80px blue,
+        0 0 180px blue, 0 0 10px blue;
+    }
+  }
+  
+  @keyframes sun {
+    0% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white, 0 0 10px white;
+    }
+  }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <link rel="stylesheet" href="wedding.css">
+ <style>
+    body {
+      background-image: url('back.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+    </style>
+</head>
+
+
+
+<body >
+    <button class="btn" ><a href="C:\Users\Sankhar\Desktop\bootcamp proj\main.html"> Home</a></button> 
+    <div class="box">
+       
+        <h2>Weddings and Functions Booking Form</h2></div>
+
+<div id="booking-form">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="200" required>
+
+    <button type="submit" id="submit-button">Submit</button>
+  </form>
+
+  <div id="status"></div>
+</div>
+
+<script src="wedding.js"></script>
+
+
+</body>
+</html>
